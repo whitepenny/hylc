@@ -1,0 +1,87 @@
+body  {
+    
+}
+
+.wrapper {
+    
+}
+
+.default-page {
+    padding: 8.0rem 0;
+}
+
+.main {
+    @mixin container;
+    position: relative;
+}
+
+@define-mixin wide {
+    max-width: 140.0rem;
+    margin: 0 auto;
+}
+
+.wide {
+    @mixin wide;
+}
+
+.columns {
+
+    @media (min-width: $phoneSize) {
+        display: flex;    
+    }
+    
+}
+
+@define-mixin alpha {
+    font-size: 5.4rem;
+    line-height: 6.4rem;
+}
+
+@define-mixin bravo {
+    font-size: 4.0rem;
+    line-height: 5.8rem;
+}
+
+@define-mixin charlie {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+}
+
+@define-mixin delta {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.btn-primary {
+    border: 5px solid $mainColor;
+    background: #fff;
+    padding: 18px 30px;
+    min-width: 200px;
+    color: $mainColor;
+    text-transform: none;
+    font-size: 1.6rem;
+}
+
+@define-mixin jumboHeading {
+    font-size: 9.0rem;
+    line-height: 9.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@define-mixin sectionHeading {
+    font-size: 4.6rem;
+    line-height: 6.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@define-mixin borderedHeading {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    border-top: 5px solid $mainColor;
+    border-bottom: 3px solid $mainColor;
+    padding: 1.0rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,80 @@
+.project-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.project-photo {
+    margin-bottom: 50px;
+}
+
+.project-testimonial {
+    background: #fff;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.project-testimonial__quote {
+    border-bottom: 2px solid $borderColor;
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: $headingFont;
+    font-style: italic;
+    color: $mainColor;
+
+
+    p {
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+    }
+}
+
+.project-testimonial__cite {
+    display: inline-block;
+    padding: 30px;
+    text-transform: uppercase;
+    color: $borderColor;
+}
+
+.project-features {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-feature {
+    
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: left;
+
+    @media (min-width: $phoneSize) {
+        display: flex;
+    }
+}
+
+.project-feature__image {
+    flex: 0 0 300px;
+    margin-bottom: 3.0rem;
+}
+
+.project-feature__content {
+
+    @media (min-width: $phoneSize) {
+        padding: 0 0 0 50px;    
+    }
+
+    h3 {
+        font-family: $bodyFont;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $mainColor;
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin: 0 0 2.0rem;
+    }
+}

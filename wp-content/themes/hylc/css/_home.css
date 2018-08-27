@@ -1,0 +1,72 @@
+.content-section {
+    background: #F8F8F5;
+    padding: 8.0rem 40px;
+    @mixin cover-background;
+}
+
+.content-section__container {
+    @mixin wide;
+}
+
+.content-section__intro {
+    font-family: $headingFont;
+    @mixin charlie;
+    text-align: center;
+    margin-bottom: 6.0rem;
+    max-width: 80%;
+    margin: 0 auto 6.0rem auto;
+}
+
+.content-section__content {
+    flex: 0 0 500px;
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media (min-width: $phoneSize) {
+        margin-right: 50px;
+        margin-bottom: 0;
+        width: 500px;
+    }
+
+    h2 {
+        @mixin borderedHeading;
+    }
+    
+    &:after {
+        content: '';
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid $borderColor;
+        width: 100%;
+    }
+}
+
+.content-section-image {
+    padding: 12.0rem 4.0rem;
+
+    .content-section__content {
+        @media (min-width: $phoneSize) {
+            margin-right: 0;
+        }
+    }
+
+    .media {
+        justify-content: flex-end;
+    }
+}
+
+.content-section__cta {
+    padding: 10.0rem 0;
+    text-align: center;
+}
+
+.home-grid {
+    background: #E9E8E4;
+    padding-top: 8.0rem;
+}
+
+.home-grid__heading {
+    @mixin borderedHeading;
+}

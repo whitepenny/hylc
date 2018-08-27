@@ -1,0 +1,86 @@
+.slides-container {
+    background: $backgroundColor;
+    padding: 0 4.0rem 4.0rem 4.0rem;
+}
+
+.slides {
+    @mixin wide;
+}
+
+.slide-container {
+    
+    display: flex;
+    align-items: center;
+    height: 200px;
+    @mixin cover-background;
+
+    @media (min-width: $phoneSize) {
+        height: 600px;    
+    }
+
+    @media (min-width: $tabletSize) {
+        height: 850px;
+    }
+    
+}
+
+.slide__content {
+    background: rgba(28,34,43,0.63);
+    width: 450px;
+    padding: 50px;
+    margin: 80px;
+    color: #fff;
+    font-size: 2.0rem;
+    display: none;
+
+    @media (min-width: $phoneSize) {
+        display: block;
+    }
+
+    h2 {
+        font-size: 4.6rem;
+        line-height: 5.6rem;
+        color: #fff;
+        font-family: $headingFont;
+
+        strong {
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+}
+
+.fs-carousel.fs-light.fs-carousel-enabled .fs-carousel-pagination {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    
+    button {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.fs-carousel.fs-light.fs-carousel-enabled .fs-carousel-page {
+    background: none;
+    border: 2px solid #fff;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    outline: none;
+    @mixin animation;
+}
+
+.fs-carousel.fs-light.fs-carousel-enabled .fs-carousel-page.fs-carousel-active, .no-touchevents .fs-light.fs-carousel-enabled .fs-carousel-page:hover {
+    border-color: $mainColor;
+    background: $mainColor;
+}
+
+.fs-carousel-controls_custom.fs-carousel-visible, .fs-carousel-enabled .fs-carousel-controls.fs-carousel-visible {
+    display: none;
+
+    @media (min-width: $phoneSize) {
+        display: block;
+    }
+}

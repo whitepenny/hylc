@@ -1,0 +1,101 @@
+
+
+.single-post__heading {
+    @mixin alpha;
+    margin-bottom: 4.0rem;
+    text-align: center;
+    
+
+    &:after {
+        content: '';
+        display: block;
+        width: 150px;
+        border-bottom: 2px solid $mainColor;
+        margin: 0 auto;
+        margin-top: 2.0rem; 
+    }
+}
+
+.single-post__content {
+    text-align: center;
+    
+}
+
+.single-post__intro {
+    max-width: 800px;
+    margin: 0 auto 6.0rem auto;
+    text-align: center;
+    @mixin bravo;
+    font-family: $headingFont;
+}
+
+.single-post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 3.6rem;
+    align-items: center;
+
+    i {
+        margin-right: 1.0rem;
+    }
+}
+
+.single-post__date {
+    margin-left: .5rem;
+
+    &:before {
+        content: '|';
+        display: inline-block;
+        margin-right: .5rem;
+    }
+}
+
+.single-post__date {
+    color: #666;
+}
+
+.single-post__body {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.single-post__image {
+    margin-bottom: 5.0rem;
+    
+}
+
+.single-post__footer {
+    display: flex;
+    align-items: center;
+
+    .social-menu {
+        margin-right: 1.0rem;
+    }
+
+    .category-list {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-right: .5rem;
+        }
+
+        a {
+            color: #555;
+
+            &:hover {
+                color: #000;
+            }
+        }
+        
+    }
+}
+

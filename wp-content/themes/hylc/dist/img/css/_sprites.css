@@ -1,0 +1,56 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 8.1em 17.8em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.arrow:before {
+      background-position: -0.5em -0.5em;
+      width: 2.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.continue:before {
+      background-position: -0.5em -2.9em;
+      width: 1.9em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.flourish:before {
+      background-position: -0.5em -5.5em;
+      width: 7.1em;
+      height: 4.1em;
+  }
+
+
+
+
+  .icon.footer-logo:before {
+      background-position: -0.5em -10.6em;
+      width: 4.9em;
+      height: 6.7em;
+  }
+
+
+
+
+
