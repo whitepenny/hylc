@@ -144,3 +144,44 @@
 .subnav ul ul .current_page_item a {
     color: $mainColor;
 }
+
+.mobile-nav-trigger {
+    color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    line-height: 1.8rem;
+}
+
+.mobile-navigation  {
+    &.fs-navigation-enabled {
+        background: $backgroundColor;
+        padding: 3.0rem;
+    }
+
+    li {
+        border-top: 1px solid $borderColor;
+
+        &:last-child {
+            border-bottom: 1px solid $borderColor;
+        }
+    }
+
+    ul ul {
+        li {
+            &:last-child {
+             border-bottom: 0;
+            }
+        }
+    }
+
+
+    a {
+        color: #333;
+        padding: .6rem 0;
+        display: block;
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}

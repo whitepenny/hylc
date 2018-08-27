@@ -4,7 +4,7 @@ $alternateFont: "azo-sans-web",sans-serif;
 $mainColor: #D0021B;
 $secondaryColor: #C5000D;
 $backgroundColor: #F4F4F4;
-$borderColor: #B79749;
+$borderColor: $mainColor;
 $bodyColor: #2B2E31;
 
 $phoneSize: 768px;
